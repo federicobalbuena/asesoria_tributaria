@@ -18,16 +18,6 @@ color: lemonchiffon;
 
 }
 
-
-#iconofacebook {
-margin-left: 17px;
-}
-
-#iconoinstagram {
-margin: 17px;
-}
-
-
 #logo {
   background-color: rgb(53,53,53);
   grid-area: logo;
@@ -41,7 +31,6 @@ margin: 17px;
   align-items: center;
   text-align: right;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  /*padding-right: 1px;*/
   padding-top: 32px;
   font-size: 8px;
 }
@@ -66,18 +55,20 @@ li {
 }
 
 #iconofacebook {
-color: lemonchiffon;
+  margin-left: 17px;
+  color: lemonchiffon;
 
 }
 
 #iconoinstagram{
-color: lemonchiffon;
+  margin: 17px;
+  color: lemonchiffon;
 
 }
 
 #iconomail {
 color: lemonchiffon;
-
+animation: iconomail 1.5s 1s infinite alternate;
 }
 
 
@@ -85,6 +76,16 @@ color: lemonchiffon;
     background-color: rgb(53, 53,53);
   grid-area: redes;
   padding-top: 25px;
+  
+}
+
+@keyframes iconomail{
+  0% {background-color:  rgba(190, 3, 3, 0.8)
+  }
+
+  100% {background-color:rgb(53, 53, 53);
+  }
+
 }
 
 #titulo {
