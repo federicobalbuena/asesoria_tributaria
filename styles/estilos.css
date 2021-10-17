@@ -34,6 +34,7 @@ color: lemonchiffon;
   padding-top: 32px;
   font-size: 8px;
 }
+
 .texto_nav {
   color:lemonchiffon;
 
@@ -70,7 +71,6 @@ li {
 color: lemonchiffon;
 animation: iconomail 1.5s 1s infinite alternate;
 }
-
 
 #redes {
     background-color: rgb(53, 53,53);
@@ -124,7 +124,6 @@ grid-area: centro;
   font-size: 70px;
   margin-top: 25rem;
   margin-left: 2rem;
-  
 }
 
 #centro_quienes_somos {
@@ -159,7 +158,7 @@ grid-area: centro;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 0px 5px;
-  }
+}
 
 #menu { 
   grid-column: 1/5;
@@ -167,9 +166,9 @@ grid-area: centro;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  }
+}
 
-  .menuitem {
+.menuitem {
   background-color: rgba(53,53,53,0.7);
   text-align: center;
   max-width: calc(90% / 4);
@@ -178,7 +177,7 @@ grid-area: centro;
   color:lemonchiffon;
   border-radius: 20px;
   font-size: 14px;
-  }
+}
 
 #link_text {
 
@@ -186,22 +185,21 @@ grid-area: centro;
 }  
 
 #mapa {
-    background-color: rgb(53,53,53);
+  background-color: rgb(53,53,53);
   margin-bottom: 0px;
   position:static;
-    grid-area: mapa;
+  grid-area: mapa;
   text-align: center;
   font-size: 10px;
 }
 
-
 #form {
   background-color: rgb(53,53,53);
-margin-bottom: 0px;
-position:static;
+  margin-bottom: 0px;
+  position:static;
   grid-area: form;
-text-align: center;
-font-size: 10px;
+  text-align: center;
+  font-size: 10px;
 }
 
 .grid {
@@ -212,13 +210,12 @@ font-size: 10px;
 
 #footer {
   background-color: rgb(53,53,53);
-margin-bottom: 0px;
-position:static;
+  margin-bottom: 0px;
+  position:static;
   grid-area: footer;
-text-align: center;
-font-size: 10px;
+  text-align: center;
+  font-size: 10px;
 }
-
 
 @media screen and (max-width: 760px) {
   #contenedor {
@@ -235,10 +232,9 @@ font-size: 10px;
       "form"
       "footer";
     
-  }
+ }
   
 }
-
 
 @media screen and (min-width: 761px) and (max-width: 1023px) {
   #contenedor {
@@ -252,5 +248,5 @@ font-size: 10px;
       "mapa mapa"
       "form form"
       "footer footer";
-  }
+ }
 }
