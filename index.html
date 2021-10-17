@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoría Tributaria</title>
+    <link rel="icon" href="img/logo Asesoria oscuro.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e29534bad8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedor">
+
+        <div id="logo"><h2><a href="index.html"><img src="img/logo_Asesoria.png" alt="Logo" width="50"></a></h2></div>
+        <div id="titulo"><h2>ASESORÍA TRIBUTARIA</h2></div>
+        <!--<div id="nav"><h2><nav><a class="texto_nav" title="Quienes somos" href="Quienes_Somos.html">¿Quiénes somos?</a>     <a class="texto_nav" title="Que hacemos" href="Que_hacemos.html">¿Qué hacemos?</a>     <a class="texto_nav" title="Noticias" href="Noticias.html">Últimas Noticias</a>   </nav></h2></div>-->
+         <div id="nav">
+            <h2><ul>
+                <li><a class="texto_nav" title="Quienes somos" href="Quienes_Somos.html">¿Quiénes somos?</a></li>
+                <li><a class="texto_nav" title="Que hacemos" href="Que_hacemos.html">¿Qué hacemos?</a></li>
+                <li><a class="texto_nav" title="Noticias" href="Noticias.html">Últimas Noticias</a></li>
+            </ul>
+            </h2>
+        </div>   
+       
+        <div id="redes"><a target="_blanck" title="@asesorastributarias" href="https://www.facebook.com/asesorastributarias"><i class="fab fa-facebook"id="iconofacebook"></i></a>
+            <a target="_blanck" title="@asesorastributarias" href="https://www.instagram.com/asesorastributarias/?hl=es"><i class="fab fa-instagram" id="iconoinstagram"></i></a>
+            <a title="asesor@asesoriatributaria.com.ar" href="mailto:asesor@asesoriatributaria.com.ar"><i class="far fa-envelope" id="iconomail"></i></div></a>
+        
+        
+        <div id="centro"><h1 id="centro_titulo">
+            <strong>ASESORÍA TRIBUTARIA</strong></h1>
+            <p id="centro_parrafo">Especialización en Monotributo, Ingresos Brutos,<br>
+                                   Ganancias de 4° categoría y Bienes Personales;<br>
+                                   Gestiones Previsionales y Liquidación de Sueldos y Jornales.<br></p>
+        </div>
+        <div id="mapa"><p>Nos encontramos en Av.9 de Julio 501, Ciudad de Buenos Aires.-</p><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.6963712824945!2d-58.38453268006438!3d-34.60380921834063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf6a28f0f1%3A0xd6913195d5d7d5ee!2sAv.%209%20de%20Julio%20501%2C%20C1043%20CABA!5e0!3m2!1ses-419!2sar!4v1634423572483!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="form">
+            <p>Suscríbase a nuestro newsletter</p><br>
+            <form action="" method="" id="un_formulario">
+                <div>
+                    <label for="nombre" class="titulo"></label>
+                    <input type="text" name="nombre" id="nombre" class="campo" title="Nombre y Apellido" placeholder="Nombre y Apellido"><br><br>
+                    <label for="tel" class="titulo"></label>
+                    <input type="tel" name="tel" id="tel" class="campo" pattern="[0-9]" title="Número de teléfono" placeholder="Teléfono (no es obligatorio)"><br><br>
+                    <label for="mail"></label>
+                    <input type="email" name="mail" placeholder="Correo electrónico" required><br><br>
+                    <span class="campo">
+                    <input type="checkbox" id="aceptar" name="aceptar" value="aceptar">
+                    <label for="mayor">Acepto términos y condiciones</label>
+                    </span>
+                    <span></span>
+                    <span>
+                    <p id="mensaje_error"></p>
+                      <input type="submit" name="enviar" id="enviar" value="Enviar">
+                      <input type="reset" name="borrar" id="borrar" value="Borrar">
+                    </span>
+                  </div>
+            </form>
+        </div>
+        <div id="footer">
+            <p>Copyright © 2021 - Asesoría Tributaria - Todos los derechos reservados.</p>
+        </div>
+
+    </div>
+
+    <script src="js/validaform.js"></script>
+
+    
+</body>
+</html>
