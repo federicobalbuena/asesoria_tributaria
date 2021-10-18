@@ -113,8 +113,6 @@ grid-area: centro;
     background-image: url(../img/background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-color: aqua;
-    border-style: solid;
     font-size: 20px;
     grid-area: centro;
 }
