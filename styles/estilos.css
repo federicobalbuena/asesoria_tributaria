@@ -8,7 +8,7 @@ color: lemonchiffon;
 #contenedor {
     display: grid;
     grid-template-columns: 5% 50% 35%;
-    grid-template-rows: 90px 9.5fr 2fr 0.2fr;
+    grid-template-rows: 7% 9.5fr 2fr 0.2fr;
     grid-template-areas:
         "logo titulo nav redes"
         "centro centro centro centro"
