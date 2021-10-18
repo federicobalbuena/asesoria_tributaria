@@ -7,7 +7,7 @@ color: lemonchiffon;
 
 #contenedor {
     display: grid;
-    grid-template-columns: 4rem 35% 50%;
+    grid-template-columns: 5% 50% 35%;
     grid-template-rows: 90px 9.5fr 2fr 0.2fr;
     grid-template-areas:
         "logo titulo nav redes"
@@ -23,6 +23,7 @@ color: lemonchiffon;
   grid-area: logo;
   align-items: center;
   padding-left: 10px;
+  
 }
 
 #nav {
@@ -33,23 +34,24 @@ color: lemonchiffon;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 32px;
   font-size: 8px;
+  
 }
-
 .texto_nav {
   color:lemonchiffon;
+
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  justify-content:right;
+  justify-content:center;
   margin: 0px;
   padding: 0px;
 }
 
 li {
   background-color: rgb(53, 53,53);
-  width: calc(90% / 5);
+  width: calc(80% / 3);
   display: inline-flex;
   justify-content: center;
 }
@@ -71,10 +73,12 @@ color: lemonchiffon;
 animation: iconomail 1.5s 1s infinite alternate;
 }
 
+
 #redes {
     background-color: rgb(53, 53,53);
   grid-area: redes;
   padding-top: 25px;
+  
   
 }
 
@@ -109,6 +113,8 @@ grid-area: centro;
     background-image: url(../img/background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-color: aqua;
+    border-style: solid;
     font-size: 20px;
     grid-area: centro;
 }
@@ -123,6 +129,7 @@ grid-area: centro;
   font-size: 70px;
   margin-top: 25rem;
   margin-left: 2rem;
+  
 }
 
 #centro_quienes_somos {
@@ -157,7 +164,7 @@ grid-area: centro;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 0px 5px;
-}
+  }
 
 #menu { 
   grid-column: 1/5;
@@ -165,9 +172,9 @@ grid-area: centro;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+  }
 
-.menuitem {
+  .menuitem {
   background-color: rgba(53,53,53,0.7);
   text-align: center;
   max-width: calc(90% / 4);
@@ -176,7 +183,7 @@ grid-area: centro;
   color:lemonchiffon;
   border-radius: 20px;
   font-size: 14px;
-}
+  }
 
 #link_text {
 
@@ -184,21 +191,22 @@ grid-area: centro;
 }  
 
 #mapa {
-  background-color: rgb(53,53,53);
+    background-color: rgb(53,53,53);
   margin-bottom: 0px;
   position:static;
-  grid-area: mapa;
+    grid-area: mapa;
   text-align: center;
   font-size: 10px;
 }
 
+
 #form {
   background-color: rgb(53,53,53);
-  margin-bottom: 0px;
-  position:static;
+margin-bottom: 0px;
+position:static;
   grid-area: form;
-  text-align: center;
-  font-size: 10px;
+text-align: center;
+font-size: 10px;
 }
 
 .grid {
@@ -209,12 +217,13 @@ grid-area: centro;
 
 #footer {
   background-color: rgb(53,53,53);
-  margin-bottom: 0px;
-  position:static;
+margin-bottom: 0px;
+position:static;
   grid-area: footer;
-  text-align: center;
-  font-size: 10px;
+text-align: center;
+font-size: 10px;
 }
+
 
 @media screen and (max-width: 760px) {
   #contenedor {
@@ -231,21 +240,86 @@ grid-area: centro;
       "form"
       "footer";
     
- }
+  }
+
+  #logo {
+    background-color: rgb(53,53,53);
+    grid-area: logo;
+    align-items: center;
+    padding-left: 15px;
+    
+  }
+
+  #titulo {
+    color:lemonchiffon;
+    background-color: rgb(53,53,53);
+    grid-area: titulo;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding-top: 17px;
+    padding-left: 15px;
+    
+  }
   
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:left;
+    padding-left: 15px;
+    
+  }
+  
+  li {
+    background-color: rgb(53, 53,53);
+    width: calc(80% / 3);
+    display: inline-flex;
+    justify-content: left;
+  }
 }
+
 
 @media screen and (min-width: 761px) and (max-width: 1023px) {
   #contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-      "logo titulo"
+      "titulo logo"
       "nav redes"
       "centro centro"
       "centro centro"
       "mapa mapa"
       "form form"
       "footer footer";
- }
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:left;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  li {
+    background-color: rgb(53, 53,53);
+    width: calc(80% / 3);
+    display: inline-flex;
+    justify-content: left;
+  }
+
+  #redes {
+    background-color: rgb(53, 53,53);
+  grid-area: redes;
+  padding-top: 25px;
+  padding-right: 10px;
+  
+  }
+
+  #logo {
+    background-color: rgb(53,53,53);
+    grid-area: logo;
+    align-items: center;
+    padding-left: 55px;
+    
+  }
 }
