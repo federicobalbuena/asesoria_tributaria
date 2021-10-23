@@ -32,7 +32,7 @@ function validarTel() {
     }
     
     function validate(e){
-      if(validarNombre() && validarTel() && validarCheck() && confirm('¿¿¿El proyecto está como para aprobar???')){ //Acá en la pregunta va un ¿Está seguro que desea suscribirse?
+      if(validarNombre() && validarTel() && validarCheck() && confirm('¿Está seguro que desea suscribirse?')){ 
         return true;
       } else {
         e.preventDefault();
