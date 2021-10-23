@@ -304,6 +304,10 @@ font-size: 10px;
     justify-content: left;
     padding-left: 0px;
   }
+    
+  .menuitem {
+    max-width: 100%;
+  }
 
   
 }
